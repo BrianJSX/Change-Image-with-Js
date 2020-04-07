@@ -20,8 +20,8 @@ function changeImg(id){
             linkImage: '/img/3.jpg'
         }
     ];
-    let imgProduct = document.getElementById(arr[id].id).getAttribute("src");
-    let nameProduct = document.getElementById('nameProduct').innerHTML = arr[id].name;
-    let priceProduct = document.getElementById('priceProduct').innerHTML = arr[id].price;
-    let c = document.getElementById('imgInfo').setAttribute("src",arr[id].linkImage);
+    document.getElementById(arr[id].id).getAttribute("src");
+    document.getElementById('nameProduct').innerHTML = arr[id].name;
+    document.getElementById('priceProduct').innerHTML = arr[id].price;
+    document.getElementById('imgInfo').setAttribute("src",arr[id].linkImage);
 }
