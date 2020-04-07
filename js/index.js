@@ -20,6 +20,18 @@ function changeImg(id){
             linkImage: '/img/3.jpg'
         }
     ];
+    let d =  document.getElementById('infoProduct');
+    let c = d.classList;
+    let len = c.length;
+    if(len > 2){
+        c.remove('animated', 'fadeInDown');
+    }else{
+        this.startImg(id);
+        d.classList.add('animated', 'fadeInDown');
+    }
+    
+}
+function startImg(id) {
     document.getElementById(arr[id].id).getAttribute("src");
     document.getElementById('nameProduct').innerHTML = arr[id].name;
     document.getElementById('priceProduct').innerHTML = arr[id].price;
