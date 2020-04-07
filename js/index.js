@@ -21,7 +21,6 @@ function changeImg(id){
         }
     ];
     let imgProduct = document.getElementById(arr[id].id).getAttribute("src");
-    let nameProduct = document.getElementById(arr[id].id).getAttribute("src");
-    let priceProduct = document.getElementById(arr[id].id).getAttribute("src");
-    let c = document.getElementById('imgInfo').setAttribute("src",imgProduct);
+    let nameProduct = document.getElementById('nameProduct').innerHTML = arr[id].Name;
+    let c = document.getElementById('imgInfo').setAttribute("src",arr[id].linkImage);
 }
