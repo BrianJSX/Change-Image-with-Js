@@ -9,23 +9,31 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 row">
-                <div class="col-md-12">
-                    <img src="/img/1.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            <div class="col-md-2 row">
+                <div class="col-md-12 mt-2">
+                    <img id="0" width="100px" src="/img/1.jpg" onclick="changeImg(0)" alt="">
                 </div>
-                <div class="col-md-12">
-                    <img src="/img/2.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <div class="col-md-12 mt-2">
+                    <img id="1" width="100px" src="/img/2.jpg" id="img"  onclick="changeImg(1)" class="imageChilrent img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
                 </div>
-                <div class="col-md-12">
-                    <img src="/img/3.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                <div class="col-md-12 mt-2">
+                    <img id="2" width="100px"  src="/img/3.jpg" id="img" onclick="changeImg(2)" class="imageChilrent img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
                 </div>
             </div>
-            <div class="col-ms-9">
-                <img src="" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            <div class="col-md-8 row">
+                    <div class="col-md-5 mt-5">
+                        <div>
+                            <img id="imgInfo" height="250px" src="/img/1.jpg"  height="200px" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <h4 id="name">Tên sản phẩm</h4>
+                        <span id="price">giá:  230000</span>
+                    </div>
             </div>
-        </div>
     </div>
 </body>
+    <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
