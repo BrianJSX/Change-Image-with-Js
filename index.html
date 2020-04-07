@@ -9,31 +9,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="container mx-auto my-auto" style="border: 2px solid gray;">
         <div class="row">
-            <div class="col-md-2 row">
-                <div class="col-md-12 mt-2">
-                    <img id="0" width="100px" src="/img/1.jpg" onclick="changeImg(0)" alt="">
+                <div class="col-md-3 row">
+                    <div class="col-md-12" >
+                        <img class="cssImage" id="0" width="150px" src="/img/1.jpg" onclick="changeImg(0)" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <img class="cssImage" id="1" width="150px" src="/img/2.jpg" id="img"  onclick="changeImg(1)" class="imageChilrent img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                    <div class="col-md-12">
+                        <img class="cssImage" id="2" width="150px"  src="/img/3.jpg" id="img" onclick="changeImg(2)" class="imageChilrent img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
                 </div>
-                <div class="col-md-12 mt-2">
-                    <img id="1" width="100px" src="/img/2.jpg" id="img"  onclick="changeImg(1)" class="imageChilrent img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-                </div>
-                <div class="col-md-12 mt-2">
-                    <img id="2" width="100px"  src="/img/3.jpg" id="img" onclick="changeImg(2)" class="imageChilrent img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-                </div>
-            </div>
-            <div id="infoProduct" class="col-md-8 row">
-                    <div class="col-md-5 mt-5">
-                        <div>
-                            <img id="imgInfo" height="250px" src="/img/1.jpg"  height="200px" alt="">
+                <div id="infoProduct" class="col-md-9 row">
+                        <div class="polaroid">
+                            <img id="imgInfo" class="" src="/img/1.jpg" alt="" style="width:100%">
+                            <div class="container">
+                              <p>Quần jean topman màu xanh nhạt thời trang nam cao cấp, vải ko ra màu, Kiểu dáng thời trang han quoc đẹp chất liệu co giãn hàng hiệu 100%</p>
+                            </div>
+                          </div>
+                        <div class="col-md-1"></div>
+                        <div id="contentProduct" class="col-md-6 mt-5 ml-2">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span style="font-size:20px;"><b>Trạng Thái: </b><span style="color:green"><b>Còn Hàng</b></span></span>
+                                </div>
+                                <p class="col-md-12" style="font-size: 40px;font-family: 'Times New Roman', Times, serif;" id="nameProduct">Quần Jean Kiểu Pháp</p>
+                                <span class="col-md-12"><b>Giá: </b><span id="priceProduct"> 230000</span> VNĐ</span>
+                                <div class="col-md-12 mt-2">
+                                    <a name="" id="" class="btn btn-primary" href="#" role="button">Mua hàng</a>
+                                </div>
+                                
+                            </div>
                         </div>
-                    </div>
-                    <div id="contentProduct" class="col-md-6 mt-5">
-                        <h4 id="nameProduct">Quần Jean 1</h4>
-                        Giá:<span id="priceProduct"> 230000</span> VNĐ
-                    </div>
-            </div>
-    </div>
+                </div>  
+        </div>
 </body>
     <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
